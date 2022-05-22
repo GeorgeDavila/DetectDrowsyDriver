@@ -2,11 +2,12 @@
 A.I. Computer Vision algorithm for detecting drowsy drivers. Not only that but collect data about specific drivers and adjust accordingly.
 
 
-###Setup
+### Setup
 Do `pip install -r requirements.txt`
 
+Install 
 
-###Run
+### Run demo
 This app uses streamlit for a UI. Do 
 
 `streamlit run streamlit_drowsiness.py`
@@ -18,7 +19,7 @@ Note that its basically a full-fledged application so it will beep if it thinks 
 
 
 
-###Collecting Biometric Data
+### Collecting Biometric Data
 
 People obviously have different eyes. So we want to collect data about an individual driver's behavior in order to tailor the algorithm to each driver. To this end we use the code contained in EyeAspectRatio_StatsGather.py. 
 
