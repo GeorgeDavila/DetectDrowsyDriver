@@ -2,13 +2,17 @@
 A.I. Computer Vision algorithm for detecting drowsy drivers. Not only that but collect data about specific drivers and adjust accordingly.
 
 
-### Setup
+## Setup
 Do `pip install -r requirements.txt`
 
-Install 
+Install dlib facial landmark detection model `shape_predictor_68_face_landmarks.dat` and put it in the main directory with the python scripts.
 
-### Run demo
-This app uses streamlit for a UI. Do 
+Some sources for that:
+https://github.com/italojs/facial-landmarks-recognition/blob/master/shape_predictor_68_face_landmarks.dat
+https://github.com/davisking/dlib-models
+
+## Run streamlit demo
+This app also uses streamlit for a UI. Do 
 
 `streamlit run streamlit_drowsiness.py`
 
