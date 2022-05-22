@@ -85,6 +85,8 @@ Face haar cascade can be easily removed if you so choose by removing lines 29-30
 face_cascade = cv2.CascadeClassifier("haarcascades/haarcascade_frontalface_default.xml")`
 
 and lines 64-69:
+<br />
+
 `#Detect faces through haarcascade_frontalface_default.xml
  face_rectangle = face_cascade.detectMultiScale(gray, 1.3, 5)
  #Draw rectangle around each face detected
