@@ -33,19 +33,19 @@ This demo captures 500 images of you in a waking state so that we have a baselin
 
 First its counting:
 
-[<img align="left" alt="demo2" width="360px" src="https://raw.githubusercontent.com/GeorgeDavila/DetectDrowsyDriver/main/demo_images/statsCollectDemo1.png" />][statsCollectDemo1]
+![statsCollectDemo1](https://raw.githubusercontent.com/GeorgeDavila/DetectDrowsyDriver/main/demo_images/statsCollectDemo1.png)
 
 <br />
 
 Then it hits 500 images:
 
-[<img align="left" alt="demo3" width="360px" src="https://raw.githubusercontent.com/GeorgeDavila/DetectDrowsyDriver/main/demo_images/statsCollectDemo2.png" />][statsCollectDemo2]
+![statsCollectDemo2](https://raw.githubusercontent.com/GeorgeDavila/DetectDrowsyDriver/main/demo_images/statsCollectDemo2.png)
 
 <br />
 
 Now you can see the stats:
 
-[<img align="left" alt="demo4" width="360px" src="https://raw.githubusercontent.com/GeorgeDavila/DetectDrowsyDriver/main/demo_images/statsCollectDemo3.png" />][statsCollectDemo3]
+![statsCollectDemo3](https://raw.githubusercontent.com/GeorgeDavila/DetectDrowsyDriver/main/demo_images/statsCollectDemo3.png)
 
 <br />
 
