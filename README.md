@@ -11,6 +11,16 @@ Some sources for that:
 https://github.com/italojs/facial-landmarks-recognition/blob/master/shape_predictor_68_face_landmarks.dat
 https://github.com/davisking/dlib-models
 
+## Run App
+
+We can run the app directly from terminal using `python drowsiness_detect.py` as shown here:
+
+![drowsydemo](https://raw.githubusercontent.com/GeorgeDavila/DetectDrowsyDriver/main/demo_images/drowsy_demo.png)
+
+You can observe that it flashes a warning "You are drowsy" when I close my eyes. 
+
+Note that its basically a full-fledged application so it will beep if it thinks your drowsy using the pygame library and an included audio file. 
+
 ## Run streamlit demo
 This app also uses streamlit for a UI. Do 
 
@@ -18,14 +28,14 @@ This app also uses streamlit for a UI. Do
 
 in terminal to run the program. 
 
-Note that its basically a full-fledged application so it will beep if it thinks your drowsy using the pygame library and an included audio file. 
-
 ![streamlitdemo](https://raw.githubusercontent.com/GeorgeDavila/DetectDrowsyDriver/main/demo_images/demo.png)
 
 <br />
 
+Notice the sliders. We use this UI to play around with how much people can close their eyes (first slider) and for how long. The default setting have a very low tolerance for drowsiness, but thats somewhat by design. I.e. noone should apply one setting to all people - we all have different eyes and eye behaviors. The next section we show a script which collects data about the individual. 
 
-### Collecting Biometric Data
+
+### Collecting Individualized Biometric Data
 
 People obviously have different eyes. So we want to collect data about an individual driver's behavior in order to tailor the algorithm to each driver. To this end we use the code contained in EyeAspectRatio_StatsGather.py. 
 
@@ -54,3 +64,6 @@ Now you can see the stats:
 <br />
 
 
+
+## Deployment
+To deploy such an application effectively you must adapt the parameters to each individual. 
