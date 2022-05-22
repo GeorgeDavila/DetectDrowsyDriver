@@ -86,8 +86,7 @@ face_cascade = cv2.CascadeClassifier("haarcascades/haarcascade_frontalface_defau
 
 and lines 64-69:
 `#Detect faces through haarcascade_frontalface_default.xml
-    face_rectangle = face_cascade.detectMultiScale(gray, 1.3, 5)
-
-    #Draw rectangle around each face detected
-    for (x,y,w,h) in face_rectangle:
-        cv2.rectangle(frame,(x,y),(x+w,y+h),(255,0,0),2)`
+ face_rectangle = face_cascade.detectMultiScale(gray, 1.3, 5)
+ #Draw rectangle around each face detected
+ for (x,y,w,h) in face_rectangle:
+     cv2.rectangle(frame,(x,y),(x+w,y+h),(255,0,0),2)`
