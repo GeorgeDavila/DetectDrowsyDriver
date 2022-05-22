@@ -76,3 +76,16 @@ To build our python file into an exe application we run `pyinstaller -w -F drows
 For proper deployment I _highly_ reccomend storing the individualized biometric parameters in an external file, such as a txt file. So use the biometric data you got from the "Collecting Individualized Biometric Data" section above and plug it into the txt file for each drivers app. This way you only need to edit the exe upon major updates. 
 
 This app can be closed by pressing 'q' on your keyboard.
+
+
+## Notes
+Face haar cascade can be easily removed if you so choose by removing lines 
+
+and lines 64-69:
+`    #Detect faces through haarcascade_frontalface_default.xml
+    face_rectangle = face_cascade.detectMultiScale(gray, 1.3, 5)
+
+    #Draw rectangle around each face detected
+    for (x,y,w,h) in face_rectangle:
+        cv2.rectangle(frame,(x,y),(x+w,y+h),(255,0,0),2)
+        `
