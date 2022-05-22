@@ -32,7 +32,8 @@ in terminal to run the program.
 
 <br />
 
-Notice the sliders. We use this UI to play around with how much people can close their eyes (first slider) and for how long. The default setting have a very low tolerance for drowsiness, but thats somewhat by design. I.e. noone should apply one setting to all people - we all have different eyes and eye behaviors. The next section we show a script which collects data about the individual. 
+
+Notice the sliders. We use this UI to play around with how much people can close their eyes (first slider) and for how long. **The default setting have a very low tolerance for drowsiness, but thats by design. The drowsiness_detect.py file uses parameters which work well for my eyes but any proper deployment of this should be adjusted to the user. Play around with these sliders.** I.e. noone should apply one setting to all people - we all have different eyes and eye behaviors. The next section we show a script which collects data about the individual. The 
 
 
 ### Collecting Individualized Biometric Data
@@ -66,4 +67,12 @@ Now you can see the stats:
 
 
 ## Deployment
-To deploy such an application effectively you must adapt the parameters to each individual. 
+To deploy such an application effectively you must adapt the parameters to each individual.
+
+To build our python file into an exe application we run `pyinstaller -w -F drowsiness_detect.py` in terminal. It builds well into an exe ~200MB in size including dependencies. So it can be easily packaged and deployed, even on a raspberry pi. As we can see below we can access it as a normal desktop app on windows:
+
+![appDemo](https://raw.githubusercontent.com/GeorgeDavila/DetectDrowsyDriver/main/demo_images/exeDemo.png)
+
+For proper deployment I _highly_ reccomend storing the individualized biometric parameters in an external file, such as a txt file. So use the biometric data you got from the "Collecting Individualized Biometric Data" section above and plug it into the txt file for each drivers app. This way you only need to edit the exe upon major updates. 
+
+This app can be closed by pressing 'q' on your keyboard.
