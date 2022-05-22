@@ -16,7 +16,7 @@ in terminal to run the program.
 
 Note that its basically a full-fledged application so it will beep if it thinks your drowsy using the pygame library and an included audio file. 
 
-[<img align="left" alt="demo2" width="360px" src="https://raw.githubusercontent.com/GeorgeDavila/DetectDrowsyDriver/main/demo_images/demo.png" />][streamlitdemo]
+![streamlitdemo](https://raw.githubusercontent.com/GeorgeDavila/DetectDrowsyDriver/main/demo_images/demo.png)
 
 <br />
 
