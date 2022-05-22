@@ -16,7 +16,7 @@ in terminal to run the program.
 
 Note that its basically a full-fledged application so it will beep if it thinks your drowsy using the pygame library and an included audio file. 
 
-
+[<img align="left" alt="demo2" width="360px" src="https://raw.githubusercontent.com/GeorgeDavila/DetectDrowsyDriver/main/demo_images/demo.png" />]
 
 
 ### Collecting Biometric Data
@@ -30,4 +30,4 @@ To run this demo enter, use command
 This demo captures 500 images of you in a waking state so that we have a baseline to compare your drowsy state against. For production you most certainly want to take more than 500 images. Once the number on screen hits 500 it will print out the data about you. Here is an example:
 
 
-[<img align="left" alt="demo2" width="360px" src="https://raw.githubusercontent.com/GeorgeDavila/GeorgeDavila/master/gitreadme_imgs/telemundo_interview.png" />]
+[<img align="left" alt="demo2" width="360px" src="https://raw.githubusercontent.com/GeorgeDavila/DetectDrowsyDriver/main/demo_images/statsCollectDemo1.png" />]
